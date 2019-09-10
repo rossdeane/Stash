@@ -62,15 +62,3 @@ set +e
 pecl install uopz
 set -e
 echo "Finished installing uopz extension."
-
-
-if [ -f "tests/travis/php_extensions.ini" ]
-then
-  echo ""
-  echo "*********************"
-  echo "Updating php.ini file"
-  echo "*********************"
-  echo ""
-  echo ""
-  phpenv config-add "tests/travis/php_extensions.ini"
-fi

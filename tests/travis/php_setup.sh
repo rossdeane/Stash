@@ -47,10 +47,12 @@ cd phpredis
 phpize
 ./configure
 echo "Installing..."
-make
-make install
+set +e
+sudo make
+sudo make install
 cd ..
 rm -Rf phpredis
+set -e
 echo "Finished installing phpredis extension."
 
 

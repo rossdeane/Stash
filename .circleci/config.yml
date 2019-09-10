@@ -28,7 +28,7 @@ jobs:
             sudo -E apt-get install -y libpng-dev libxml2-dev
             sudo -E docker-php-ext-install mysqli gd xmlrpc zip
             sudo -E pecl install apcu <<< '' || sudo -E pecl install apcu-4.0.11 <<< ''
-            sudo -E docker-php-ext-enable apcu redis memcache
+            sudo -E docker-php-ext-enable apcu
             echo "apc.enable=1" | sudo -E tee --append /usr/local/etc/php/conf.d/docker-php-ext-apcu.ini
             echo "apc.enable_cli=1" | sudo -E tee --append /usr/local/etc/php/conf.d/docker-php-ext-apcu.ini
             echo "memory_limit = 512M" | sudo -E tee --append /usr/local/etc/php/conf.d/docker-php-memory.ini

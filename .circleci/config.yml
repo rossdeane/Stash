@@ -54,4 +54,5 @@ jobs:
 
       - run: ./tests/runTests.sh
 
-      - run: php vendor/bin/coveralls -v
+      - run: echo "running coveralls"
+      - run: php vendor/bin/coveralls -vvv

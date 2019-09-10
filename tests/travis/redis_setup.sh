@@ -18,7 +18,7 @@ sudo cp ./tests/travis/files/redis/redis-server2.conf /etc/redis/redis-server2.c
 echo "Creating Data Directory..."
 
 sudo mkdir /var/lib/redis2
-sudo chown redis:redis /var/lib/redis2
+sudo chown $USER:$USER /var/lib/redis2
 
 
 echo "Starting Second Service..."

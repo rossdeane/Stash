@@ -25,7 +25,6 @@ jobs:
           name: Dependencies
           command: |
             sudo -E apt-get update
-            sudo -E apt-get install -y mysql-client libpng-dev libxml2-dev
             sudo -E docker-php-ext-install mysqli gd xmlrpc zip
             sudo -E pecl install apcu <<< '' || sudo -E pecl install apcu-4.0.11 <<< ''
             sudo -E docker-php-ext-enable apcu

@@ -2,26 +2,6 @@
 
 set -e
 
-
-echo "**************************"
-echo "Setting up PHP Extensions."
-echo "**************************"
-echo ""
-echo "PHP Version: $TRAVIS_PHP_VERSION"
-echo ""
-echo "Update Pecl"
-pecl channel-update pecl.php.net
-
-echo ""
-echo "******************************"
-echo "Installing apcu extension"
-echo "******************************"
-set +e
-printf "yes\n" | pecl install apcu
-set -e
-echo "Finished installing apcu extension."
-
-
 echo ""
 echo "******************************"
 echo "Installing memcache extension"

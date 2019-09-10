@@ -50,7 +50,7 @@ class Ephemeral extends AbstractDriver
             $maxItems = $options['maxItems'];
             if (!is_int($maxItems) || $maxItems < 0) {
                 throw new Stash\Exception\InvalidArgumentException(
-                  'maxItems must be a positive integer.'
+                    'maxItems must be a positive integer.'
                 );
             }
             $this->maxItems = $maxItems;

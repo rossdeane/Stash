@@ -12,6 +12,7 @@ echo ""
 echo "Copying Configuration..."
 
 sudo cp ./tests/travis/files/redis/redis-server2 /etc/init.d/redis-server2
+sudo mkdir /etc/redis
 sudo cp ./tests/travis/files/redis/redis-server2.conf /etc/redis/redis-server2.conf
 
 echo "Creating Data Directory..."

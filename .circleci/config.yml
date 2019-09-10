@@ -39,6 +39,7 @@ jobs:
           paths:
             - ./vendor
 
+      - run: mkdir /tmp/pear/temp
       - run: tests/travis/php_setup.sh
       - run: tests/travis/redis_setup.sh
 
